@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Classes in Java script</h1>
+    <p id="para"></p>
+    <h1 id="head"></h1>
+    <script>
+        class info
+        {
+            constructor(name,year)
+            {
+                this.name=name;
+                this.year=year;
+            }
+        
+        age()
+        {
+            let date= new Date();
+            return date.getFullYear()+this.year
+        }
+    }
+        person1=new info ("janaki",2010);
+        document.getElementById("para").innerHTML="My name is "+person1.name + " And i was born in"+ person1.year
+        person2=new info ("laila",2014);
+        document.getElementById("head").innerHTML="My name is "+person2.name + " And i was born in"+ person2.year
+    
+    </script>
+</body>
+</html>
